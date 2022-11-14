@@ -7,13 +7,20 @@
 
 .card-size{
     width: 740px;
-    height: 400px !important;
+    height: 470px !important;
     
 }
 
 .col-md-4{
     background-color: rgb(52, 44, 109);
     height: 100% !important;
+    
+}
+
+@media (min-width: 768px){
+.col-md-4 {   
+    width: 170px !important;
+}
 }
 
 .g-0{
@@ -29,6 +36,22 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     height: 300px;
+}
+
+.card{
+    width: 420px;
+}
+
+.card-title {
+    text-align: center;
+    margin-left: 70px;
+    padding: 18px;
+}
+
+
+.control-bar {
+    width: 418px;
+    margin-left: 70px;
 }
