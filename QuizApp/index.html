@@ -19,7 +19,7 @@
     crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="init()">
 
   <div class="card-page">
     <div class="card-size mb-3">
@@ -41,29 +41,29 @@
 
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">Frage</h5>
+            <h5 class="card-title" id="questiontext">Frage</h5>
 
-            <div class="answer-block">
-              <div class="card">
-                <div class="card-body">
+            <div onclick="answer('answer1')" class="answer-block">
+              <div class="card quiz-answer">
+                <div class="card-body" id="answer1">
                   Antwort
                 </div>
               </div>
 
-              <div class="card">
-                <div class="card-body">
+              <div onclick="answer('answer2')" class="card quiz-answer">
+                <div class="card-body" id="answer2">
                   Antwort
                 </div>
               </div>
 
-              <div class="card">
-                <div class="card-body">
+              <div onclick="answer('answer3')" class="card quiz-answer">
+                <div class="card-body" id="answer3">
                   Antwort
                 </div>
               </div>
 
-              <div class="card">
-                <div class="card-body">
+              <div onclick="answer('answer4')" class="card quiz-answer">
+                <div class="card-body" id="answer4">
                   Antwort
                 </div>
               </div>
@@ -71,7 +71,7 @@
              
             </div>
             <div class="d-flex justify-content-between control-bar mt-4">
-              <p> Frage <b>xxx</b> von <b>xxx</b> </p>
+              <p > Frage <b>xxx</b> von <b id="show-question-amount">xxx</b> </p>
               <button type="button" class="btn btn-primary">Primary</button>
             </div>
             

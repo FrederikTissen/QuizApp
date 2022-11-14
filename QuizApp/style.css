@@ -55,3 +55,8 @@
     width: 418px;
     margin-left: 70px;
 }
+
+.quiz-answer :hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+}
