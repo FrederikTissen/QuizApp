@@ -10,7 +10,7 @@ let questions = [
         "answer_2": "Das Sams",
         "answer_3": "Konrad Zuse",
         "answer_4": "König Ludwig XIV",
-        "correctAnswer": 2
+        "correctAnswer": 3
     },
     {
         "category": 0,
@@ -19,7 +19,7 @@ let questions = [
         "answer_2": "8192",
         "answer_3": "80000",
         "answer_4": "13",
-        "correctAnswer": 1
+        "correctAnswer": 2
     },
     {
         "category": 0,
@@ -28,16 +28,16 @@ let questions = [
         "answer_2": "1 Hz",
         "answer_3": "16 kHz",
         "answer_4": "5,3 Hz",
-        "correctAnswer": 3
+        "correctAnswer": 4
     },
     {
         "category": 0,
         "question": "Wann gab es den ersten PC?",
-        "answer_1":    "1938 (Zuse Z3)",
-        "answer_2":    "1976 (Apple I)",
-        "answer_3":    "1966 (PC-4712)",
-        "answer_4":    "1991 (BlueScreen)",
-        "correctAnswer": 1
+        "answer_1": "1938 (Zuse Z3)",
+        "answer_2": "1976 (Apple I)",
+        "answer_3": "1966 (PC-4712)",
+        "answer_4": "1991 (BlueScreen)",
+        "correctAnswer": 2
     },
     {
         "category": 0,
@@ -46,7 +46,7 @@ let questions = [
         "answer_2": "13",
         "answer_3": "42",
         "answer_4": "499",
-        "correctAnswer": 2
+        "correctAnswer": 3
     },
     {
         "category": 1,
@@ -55,7 +55,7 @@ let questions = [
         "answer_2": "Lady Gaga",
         "answer_3": "Didi Hallervorden",
         "answer_4": "Stephen Hawking",
-        "correctAnswer": 0
+        "correctAnswer": 1
     },
     {
         "category": 1,
@@ -64,7 +64,7 @@ let questions = [
         "answer_2": "High Tension Titan-Poly Socket",
         "answer_3": "Hypertext Transport Protocol Safety",
         "answer_4": "Hypertext Transfer Protocol Secure",
-        "correctAnswer": 3
+        "correctAnswer": 4
     },
     {
         "category": 2,
@@ -73,7 +73,7 @@ let questions = [
         "answer_2": "Ein Mobilfunkstandard",
         "answer_3": "Ein Handymodell von Nokia",
         "answer_4": "Eine hochfeste Stahlsorte",
-        "correctAnswer": 1
+        "correctAnswer": 2
     },
     {
         "category": 2,
@@ -82,7 +82,7 @@ let questions = [
         "answer_2": "Nokia",
         "answer_3": "Motorola",
         "answer_4": "Privileg",
-        "correctAnswer": 2
+        "correctAnswer": 3
     },
     {
         "category": 2,
@@ -91,7 +91,7 @@ let questions = [
         "answer_2": "800 g",
         "answer_3": "10 kg",
         "answer_4": "1 kg",
-        "correctAnswer": 3
+        "correctAnswer": 4
     },
     {
         "category": 2,
@@ -100,7 +100,7 @@ let questions = [
         "answer_2": "20 Minuten",
         "answer_3": "3 Stunden",
         "answer_4": "1,5 Stunden",
-        "correctAnswer": 1
+        "correctAnswer": 2
     },
     {
         "category": 3,
@@ -109,7 +109,7 @@ let questions = [
         "answer_2": "Alfred Biolek",
         "answer_3": "Microsoft",
         "answer_4": "Captain Kirk",
-        "correctAnswer": 2
+        "correctAnswer": 3
     },
     {
         "category": 3,
@@ -127,7 +127,7 @@ let questions = [
         "answer_2": "Ein Tastaturkürzel",
         "answer_3": "Ein Programmierfehler",
         "answer_4": "Eine andere Bezeichnung für 'App'",
-        "correctAnswer": 2
+        "correctAnswer": 3
     },
     {
         "category": 3,
@@ -136,6 +136,6 @@ let questions = [
         "answer_2": "MS-DOS",
         "answer_3": "Brainf*ck",
         "answer_4": "ASCII",
-        "correctAnswer": 2
+        "correctAnswer": 3
     },
 ]
