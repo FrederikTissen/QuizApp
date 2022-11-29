@@ -7,8 +7,12 @@
 
 .card-size{
     width: 740px;
-    height: 470px !important;
+    height: 520px !important;
     
+}
+
+.card-body{
+    height: 516px;
 }
 
 .col-md-4{
@@ -17,11 +21,10 @@
     
 }
 
-@media (min-width: 768px){
-.col-md-4 {   
-    width: 170px !important;
+button{
+    z-index: 2;
 }
-}
+
 
 .g-0{
     border: solid 2px;
@@ -36,31 +39,64 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
     height: 300px;
 }
 
 .card{
     width: 420px;
+    height: 60px !important;
 }
 
 .card-title {
     text-align: center;
-    margin-left: 70px;
-    padding: 18px;
+    
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
 
 
 .control-bar {
     width: 418px;
-    margin-left: 70px;
+    padding-top: 20px;
 }
 
-.quiz-answer :hover{
+.answer-block button:hover{
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.05);
 }
 
 .bg-success, .bg-danger{
     color: white;
+}
+
+.end-screen{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    height: 516px !important;
+    justify-content: center;
+    
+}
+
+
+.trophy {
+    display: flex;
+    object-fit: cover;
+    height: 452px;
+    position: relative;
+    justify-content: center;
+    top: -477px;
+    right: 5px;
+    opacity: 0.25;
+}
+
+.col-md-8 {
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.progress{
+    width: 418px;
 }

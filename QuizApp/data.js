@@ -118,7 +118,7 @@ let questions = [
         "answer_2": "Eine Programmiersprache",
         "answer_3": "Eine Teesorte",
         "answer_4": "Eine Modemarke",
-        "correctAnswer": 1
+        "correctAnswer": 2
     },
     {
         "category": 3,

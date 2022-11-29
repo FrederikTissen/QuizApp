@@ -1,0 +1,70 @@
+/* Just for smartpones*/
+@media(max-width: 767px) {
+    .hide-mobil {
+        display: none;
+    }
+
+    .card-page {
+        width: 100%;
+    }
+
+    .card-size {
+        width: 450px;
+        height: unset !important;
+    }
+
+    .col-md-4 {
+        height: 130px !important;
+        width: 100% !important;
+    }
+
+    .row {
+        height: unset;
+    }
+
+    .control-bar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+
+
+}
+
+@media (max-width: 250px) {
+    .col-md-4 {
+        width: 170px !important;
+    }
+}
+
+
+/* Just for smartpones*/
+@media(max-width: 450px) {
+    .hide-mobil {
+        display: none;
+    }
+
+    .trophy {
+        height: 330px;
+        top: -430px;
+    }
+
+    .card {
+        width: 240px;
+    }
+
+    .card-size {
+        height: 100vh;
+    }
+
+    .progress {
+        width: 240px;
+    }
+
+    .control-bar {
+        width: 240px;
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+
+}

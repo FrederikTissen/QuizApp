@@ -8,6 +8,8 @@
   <title>QuizzApp</title>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_responsive.css">
+
   <script src="script.js"></script>
   <script src="data.js"></script>
   <!-- CSS only -->
@@ -21,18 +23,18 @@
 
 <body onload="init()">
 
-  <div class="card-page">
-    <div class="card-size mb-3">
+  <div class="card-page d-flex justify-content-center align-items-center">
+    <div class="card-size">
       <div class="row g-0">
         <div class="col-md-4 ">
           <div class="d-flex justify-content-center">
             <img src="img/icon-lamp-white.png" class="img-fluid rounded-start pt-5">
           </div>
           <div class="pt-4">
-            <p class="fs-4 text-white d-flex justify-content-center">Computer</p>
-            <p class="fs-4 text-white d-flex justify-content-center">Internet</p>
-            <p class="fs-4 text-white d-flex justify-content-center">Handy & Co.</p>
-            <p class="fs-4 text-white d-flex justify-content-center">Software</p>
+            <p class="fs-4 text-white d-flex justify-content-center"><b id="category-computer"></b>Computer</p>
+            <p class="fs-4 text-white d-flex justify-content-center"><b id="category-internet"></b>Internet</p>
+            <p class="fs-4 text-white d-flex justify-content-center"><b id="category-handy"></b>Handy & Co.</p>
+            <p class="fs-4 text-white d-flex justify-content-center"><b id="category-software"></b>Software</p>
           </div>
 
         </div>
@@ -40,41 +42,68 @@
 
 
         <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title" id="questiontext">Frage</h5>
 
-            <div  class="answer-block">
-              <div onclick="answer('answer1')" class="card quiz-answer">
-                <div class="card-body" id="answer1">
-                  Antwort
-                </div>
-              </div>
+          <div class="card-body " id="endScreen" style="display: none;">
+            <div class="end-screen">
 
-              <div onclick="answer('answer2')" class="card quiz-answer">
-                <div class="card-body" id="answer2">
-                  Antwort
-                </div>
-              </div>
+              <h1 class="p-3">Glückwunsch!</h1>
+              <h4>Dein Ergebnis:</h4>
+              <h4 class="p-2"><b id="amount-of-rigth-questions">xxx</b> <b>Richtige</b> von <b
+                  id="question-amount-endScreen"></b> </h4>
 
-              <div onclick="answer('answer3')" class="card quiz-answer">
-                <div class="card-body" id="answer3">
-                  Antwort
-                </div>
-              </div>
+              <button onclick="" id="share" type="button" class="btn btn-primary m-2">Teilen</button>
+              <button onclick="restartGame()" id="repeat" type="button" class="btn btn-primary m-2">Erneut
+                spielen!</button>
 
-              <div onclick="answer('answer4')" class="card quiz-answer">
-                <div class="card-body" id="answer4">
-                  Antwort
-                </div>
-              </div>
-
-             
             </div>
-            <div class="d-flex justify-content-between control-bar mt-4">
-              <p > Frage <b>xxx</b> von <b id="show-question-amount">xxx</b> </p>
-              <button id="next-button"  type="button" class="btn btn-primary" disabled>Nächste Frage</button>
+            <div class="trophy">
+              <img src="img/trophy.png" alt="">
             </div>
-            
+          </div>
+
+          <div class="card-body" id="questionBody">
+            <h3 class="card-title" id="questiontext">Frage</h3>
+
+            <div class="answer-block">
+              <button id="Answer1" onclick="answer('answer1')" class="card d-flex justify-content-center align-items-center">
+                <div  id="answer1">
+                  Antwort
+                </div>
+              </button>
+
+              <button id="Answer2" onclick="answer('answer2')" class="card d-flex justify-content-center align-items-center">
+                <div  id="answer2">
+                  Antwort
+                </div>
+              </button>
+
+              <button id="Answer3" onclick="answer('answer3')" class="card d-flex justify-content-center align-items-center">
+                <div  id="answer3">
+                  Antwort
+                </div>
+              </button>
+
+              <button id="Answer4" onclick="answer('answer4')" class="card d-flex justify-content-center align-items-center">
+                <div  id="answer4">
+                  Antwort
+                </div>
+              </button>
+
+              <div class="progress">
+                <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%;">0%</div>
+              </div>
+
+
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="d-flex justify-content-between control-bar ">
+                <p> Frage <b id="show-current-question">xxx</b> von <b id="show-question-amount">xxx</b> </p>
+                <button onclick="nextQuestion()" id="next-button" type="button" class="btn btn-primary" disabled>Nächste
+                  Frage</button>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
